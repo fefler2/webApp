@@ -1,6 +1,7 @@
 package WebApp.demo;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,9 +17,12 @@ public class AppController {
     }
 
     @RequestMapping("/list/contact")
-    public String listContact(){
+    public String listContact(Model model){
         ContactBusiness business = new ContactBusiness();
         List<Contact> contactList=  business.getContactList();
+
+        model.addAttribute("contacts", contactList);
+
         return "contact";
     }
 
