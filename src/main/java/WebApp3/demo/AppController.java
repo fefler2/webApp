@@ -1,9 +1,8 @@
-package WebApp.demo;
+package WebApp3.demo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
@@ -13,7 +12,7 @@ public class AppController {
     @RequestMapping("/test")
     public String test(){
         System.out.println("AppController-> welcome ()");
-        return "index";
+        return "test.jsp";
     }
 
     @RequestMapping("/list/contact")

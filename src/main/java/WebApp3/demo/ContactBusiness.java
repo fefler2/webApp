@@ -1,6 +1,4 @@
-package WebApp.demo;
-
-import org.springframework.stereotype.Controller;
+package WebApp3.demo;
 
 import java.util.ArrayList;
 import java.util.List;

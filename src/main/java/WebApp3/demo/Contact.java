@@ -1,4 +1,4 @@
-package WebApp.demo;
+package WebApp3.demo;
 
 import org.springframework.stereotype.Controller;
 
