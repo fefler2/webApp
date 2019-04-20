@@ -4,6 +4,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @Controller
 public class AppController {
 
@@ -11,6 +13,13 @@ public class AppController {
     public String test(){
         System.out.println("AppController-> welcome ()");
         return "index";
+    }
+
+    @RequestMapping("/list/contact")
+    public String listContact(){
+        ContactBusiness business = new ContactBusiness();
+        List<Contact> contactList=  business.getContactList();
+        return "contact";
     }
 
 }
