@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Controller
 public class AppController {
 
-    @RequestMapping("/")
-    public String welcome(){
+    @RequestMapping("/test")
+    public String test(){
         System.out.println("AppController-> welcome ()");
         return "index";
     }
